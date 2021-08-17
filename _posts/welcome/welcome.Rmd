@@ -1,0 +1,84 @@
+---
+title: "Analyses des cations"
+description: |
+  Bienvenue sur la page dédié au stage terrain ! Ici les etudiants publient leurs études.
+author:
+  - name: Master SEE
+    url: https://www.cfa-sciences.fr/fr/master-sciences-de-lunivers-environnement-ecologie-parcours-see
+    affiliation: Sorbonne Université
+    affiliation_url: https://sciences.sorbonne-universite.fr/
+date: 08-17-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+## Stage terrain
+
+Le **Stage terrain** 2021 du Master SEE s'est déroulé dans les Pyrénnées. C'etait l'occasion pour les étudiants de comprendre les aspects pratique de la formation.
+
+La deuxième semaine du stage est dédiée aux analyses en laboratoire. La *spectrophotométrie et l'ICP OES* sont les deux techniques utilisées pour doser les élements Cations et Anions présents dans les eaux.
+
+
+
+## Le set de données
+
+Les données ont été réunis et sont résumés dans le tableau suivant :
+
+```{r resumé, echo=FALSE, warning = FALSE, message = FALSE}
+
+  
+    library(readr)
+Cations <- read_delim("~/Master SEE/Travail/M1/Poster/Cations.csv", 
+    ";", escape_double = FALSE, trim_ws = TRUE)
+
+ Cations<- na.omit(Cations)
+  summary(Cations)
+
+```
+
+## Les graphiques 
+
+Voici les graphiques tracés à l'issue de notre stage !
+
+```{r Cations, echo=FALSE, warning = FALSE, message = FALSE}
+
+
+       library(scales)
+       library(ggplot2)
+       B= ggplot(Cations, aes( SymUniteMesure,RsAna , fill = LbLongParametre)) +
+         geom_boxplot (outlier.colour="black", outlier.shape=26, outlier.size=20, notch=FALSE)+   
+         geom_jitter(shape=16, position=position_jitter(0.05)) + 
+               
+            
+               
+               scale_y_continuous(trans = log10_trans(),
+                                  breaks = trans_breaks("log10", function(x) 10^x),
+                                  labels = trans_format("log10", math_format(10^.x)))+
+               annotation_logticks(sides="lr") +
+               
+        
+               
+         
+         labs(title="Boxplot des cations majeurs Pyrénées 2019-2020",x="", y = "Concentration")+
+         
+         
+         theme(
+           plot.title = element_text(color="black", size=15, face="bold.italic"),
+           axis.title.x = element_text(color="black", size=10, face="bold"),
+           axis.title.y = element_text(color="black", size=10, face="bold"))+
+         
+         theme(axis.text.x= element_text(size=10))+
+         theme(axis.text.y= element_text(size=10))+
+         
+         theme(legend.title = element_text(size=10))+
+         theme(legend.text = element_text(size=10))
+       
+       
+       B 
+       
+       
+```
+
+## Conclusion
+Nous pouvons observer des taux de sodium assez elevés ce qui s'explique par les roches riches en **alites** de la région. Ceux-ci est due à l'histoire géologique des Pyrénées. Il y a plusieurs millions d'années (aire Tertiaire), cette région était imergée. C'est grace à la surection des Pyrénées que les terres ont émergés.

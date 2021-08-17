@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "A propos de ce blog",
+      "description": "Lancé en 2021 ce blog est à l'initiative des étudiants du master SEE",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-08-17T14:47:29+02:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Blog des etudiants du Master SEE",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-08-17T15:06:01+02:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}

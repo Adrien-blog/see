@@ -1,0 +1,84 @@
+---
+title: "Analyses des anions"
+description: |
+  Bienvenue sur la page dédié au stage terrain ! Ici les etudiants publient leurs études.
+author:
+  - name: Master SEE
+    url: https://www.cfa-sciences.fr/fr/master-sciences-de-lunivers-environnement-ecologie-parcours-see
+date: 08-17-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+
+
+## Le set de données
+
+Les données ont été réunis et sont résumés dans le tableau suivant :
+
+```{r resumé, echo=FALSE, warning = FALSE, message = FALSE}
+
+  
+    library(readr)
+Anions <- read_delim("~/Master SEE/Travail/M1/Poster/Anions.csv", 
+    ";", escape_double = FALSE, trim_ws = TRUE)
+
+ Anions<- na.omit(Anions)
+  summary(Anions)
+
+```
+
+## Les graphiques 
+
+Voici les graphiques tracés à l'issue de notre stage !
+
+```{r Anions, echo=FALSE, warning = FALSE, message = FALSE}
+
+
+       library(scales)
+       library(ggplot2)
+       B= ggplot(Anions, aes( SymUniteMesure,RsAna , fill = LbLongParametre)) +
+         geom_boxplot (outlier.colour="black", outlier.shape=26, outlier.size=20, notch=FALSE)+   
+         geom_jitter(shape=16, position=position_jitter(0.05)) + 
+               
+            
+               
+               scale_y_continuous(trans = log10_trans(),
+                                  breaks = trans_breaks("log10", function(x) 10^x),
+                                  labels = trans_format("log10", math_format(10^.x)))+
+               annotation_logticks(sides="lr") +
+               
+        
+               
+         
+         labs(title="Boxplot des anions majeurs Pyrénées 2019-2020",x="", y = "Concentration")+
+         
+         
+         theme(
+           plot.title = element_text(color="black", size=15, face="bold.italic"),
+           axis.title.x = element_text(color="black", size=10, face="bold"),
+           axis.title.y = element_text(color="black", size=10, face="bold"))+
+         
+         theme(axis.text.x= element_text(size=8))+
+         theme(axis.text.y= element_text(size=10))+
+         
+         theme(legend.title = element_text(size=10))+
+         theme(legend.text = element_text(size=10))
+       
+       
+       B 
+       
+       
+```
+Distill is a publication format for scientific and technical writing, native to the web.
+
+Learn more about using Distill at <https://rstudio.github.io/distill>.
+
+

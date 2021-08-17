@@ -1,0 +1,9 @@
+---
+title: "A propos de ce blog"
+description: |
+  Lancé en 2021 ce blog est à l'initiative des étudiants du master SEE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```

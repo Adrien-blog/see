@@ -1,0 +1,53 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Analyses des cations",
+    "description": "Bienvenue sur la page dédié au stage terrain ! Ici les etudiants publient leurs études.",
+    "author": [
+      {
+        "name": "Master SEE",
+        "url": "https://www.cfa-sciences.fr/fr/master-sciences-de-lunivers-environnement-ecologie-parcours-see"
+      }
+    ],
+    "date": "2021-08-17",
+    "categories": [],
+    "contents": "\r\nStage terrain\r\nLe Stage terrain 2021 du Master SEE s’est déroulé dans les Pyrénnées. C’etait l’occasion pour les étudiants de comprendre les aspects pratique de la formation.\r\nLa deuxième semaine du stage est dédiée aux analyses en laboratoire. La spectrophotométrie et l’ICP OES sont les deux techniques utilisées pour doser les élements Cations et Anions présents dans les eaux.\r\nLe set de données\r\nLes données ont été réunis et sont résumés dans le tableau suivant :\r\n\r\n LbStationMesureEauxSurface   DatePrel          HeurePrel       \r\n Length:616                 Length:616         Length:616       \r\n Class :character           Class :character   Class1:hms       \r\n Mode  :character           Mode  :character   Class2:difftime  \r\n                                               Mode  :numeric   \r\n                                                                \r\n                                                                \r\n LbLongParametre        RsAna         SymUniteMesure    \r\n Length:616         Min.   :  0.120   Length:616        \r\n Class :character   1st Qu.:  2.905   Class :character  \r\n Mode  :character   Median :  5.940   Mode  :character  \r\n                    Mean   : 15.298                     \r\n                    3rd Qu.: 15.700                     \r\n                    Max.   :288.000                     \r\n\r\nLes graphiques\r\nVoici les graphiques tracés à l’issue de notre stage !\r\n\r\n\r\n\r\nConclusion\r\nNous pouvons observer des taux de sodium assez elevés ce qui s’explique par les roches riches en alites de la région. Ceux-ci est due à l’histoire géologique des Pyrénées. Il y a plusieurs millions d’années (aire Tertiaire), cette région était imergée. C’est grace à la surection des Pyrénées que les terres ont émergés.\r\n\r\n\r\n\r\n",
+    "preview": "posts/welcome/welcome_files/figure-html5/Cations-1.png",
+    "last_modified": "2021-08-17T15:13:02+02:00",
+    "input_file": "welcome.knit.md"
+  },
+  {
+    "path": "posts/2021-08-17-anions/",
+    "title": "Analyses des anions",
+    "description": "Bienvenue sur la page dédié au stage terrain ! Ici les etudiants publient leurs études.",
+    "author": [
+      {
+        "name": "Master SEE",
+        "url": "https://www.cfa-sciences.fr/fr/master-sciences-de-lunivers-environnement-ecologie-parcours-see"
+      }
+    ],
+    "date": "2021-08-17",
+    "categories": [],
+    "contents": "\r\nLe set de données\r\nLes données ont été réunis et sont résumés dans le tableau suivant :\r\n\r\n LbStationMesureEauxSurface   DatePrel          HeurePrel       \r\n Length:9113                Length:9113        Length:9113      \r\n Class :character           Class :character   Class1:hms       \r\n Mode  :character           Mode  :character   Class2:difftime  \r\n                                               Mode  :numeric   \r\n                                                                \r\n                                                                \r\n LbLongParametre        RsAna         SymUniteMesure    \r\n Length:9113        Min.   :  0.010   Length:9113       \r\n Class :character   1st Qu.:  0.020   Class :character  \r\n Mode  :character   Median :  0.054   Mode  :character  \r\n                    Mean   :  5.624                     \r\n                    3rd Qu.:  2.040                     \r\n                    Max.   :510.000                     \r\n\r\nLes graphiques\r\nVoici les graphiques tracés à l’issue de notre stage !\r\n\r\n\r\n\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2021-08-17-anions/anions_files/figure-html5/Anions-1.png",
+    "last_modified": "2021-08-17T15:20:39+02:00",
+    "input_file": "anions.knit.md"
+  },
+  {
+    "path": "posts/2021-08-17-visites/",
+    "title": "<img src=\"fond.jpg\" style=\"float: left;\"/> Blog",
+    "description": "Le stage terrain est aussi une façon de voyager et de visiter des régions parfois inconnus. Nous avons visité une ancienne mine d'extraction.",
+    "author": [
+      {
+        "name": "Master SEE",
+        "url": "https://www.cfa-sciences.fr/fr/master-sciences-de-lunivers-environnement-ecologie-parcours-see"
+      }
+    ],
+    "date": "2021-08-17",
+    "categories": [],
+    "contents": "\r\n L’association est au coeur de beucoup de projets !\r\nSoutenir l’association\r\nphoto saisi en local\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-08-17T17:09:25+02:00",
+    "input_file": "visites.knit.md"
+  }
+]

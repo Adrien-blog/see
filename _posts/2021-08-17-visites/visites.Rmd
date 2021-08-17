@@ -1,0 +1,28 @@
+---
+title: "<img src=\"fond.jpg\" style=\"float: left;\"/> Blog"
+description: |
+  Le stage terrain est aussi une façon de voyager et de visiter des régions parfois inconnus. Nous avons visité une ancienne mine d'extraction.
+author:
+  - name: Master SEE
+    url: https://www.cfa-sciences.fr/fr/master-sciences-de-lunivers-environnement-ecologie-parcours-see
+date: 08-17-2021
+output: 
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+![photo saisie sur le web](https://www.cfa-sciences.fr/sites/default/files/2020-09/isee.png)
+L'association est au coeur de beucoup de projets ! 
+
+Soutenir l'association 
+
+![photo saisi en local](fond.jpg)
+
+
+
+
